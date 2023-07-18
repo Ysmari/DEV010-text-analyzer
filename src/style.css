@@ -14,30 +14,58 @@ textarea[name="user-input"] {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-#reset-buttom {
+footer p {
+  margin: 0;
+}
+
+#reset-button {
     display: block;
     margin: 0 auto;
     text-align:center;
+    background-color: #a1a1a1;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    padding: 20px;
+}
+#reset-button:hover {
+    background-color: #d32f2f;
+}
+
+#reset-button:active {
+    background-color: #1f1cb7;
 }
 
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto; 
     display: flex;
-    justify-content: space-between
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
 }
 
 li {
+    flex-basis: auto;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
+    border-radius: 15% / 40%;
     padding: 10px;
+
 }
+
+
+
 
 
 
