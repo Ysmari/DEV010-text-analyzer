@@ -55,6 +55,11 @@ ul {
     width: 80%;
 }
 
+.word-content {
+    margin: 0 auto; 
+}
+
+
 li {
     flex-basis: auto;
     margin-bottom: 10px;
@@ -63,6 +68,7 @@ li {
     padding: 10px;
 
 }
+
 
 
 
