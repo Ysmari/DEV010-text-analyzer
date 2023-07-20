@@ -1,6 +1,18 @@
+body{
+    background-image: url('https://img.freepik.com/vector-gratis/diseno-fondo-negocios_1300-357.jpg');
+
+}
+
+
 header {
     text-align: center;
+    
   }
+
+  header img {
+    width: 100px; /* Ajusta el ancho según tu preferencia */
+    height: 100px; /* Ajusta la altura según tu preferencia */
+}
 
 textarea[name="user-input"] {
     width: 80%;
@@ -10,39 +22,43 @@ textarea[name="user-input"] {
     text-align: center;
     padding-top: 120px;
     box-sizing: border-box;
-    border: 2px solid #58D68D;
+    border: 10px solid #58D68D;
+    border-radius:  50px;
+    animation: borderChange 5s infinite;
 }
-
+    
 footer {
   position: fixed;
   bottom: 20px; 
   right: 20px;
-  background-color: #f0f0f0;
-  padding: 10px;
-  border-radius: 4px;
+  background-color: hsl(145, 83%, 50%);
+  padding: 20px;
+  border-radius: 10px;
+  
 }
 
 footer p {
   margin: 0;
+  font-weight: bold;
 }
 
 #reset-button {
     display: block;
     margin: 0 auto;
     text-align:center;
-    background-color: #a1a1a1;
+    background-color:#00FF33  ;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
-    color: white;
+    border-radius: 10px;
+    color: rgb(96, 168, 55);
     padding: 20px;
 }
 #reset-button:hover {
-    background-color: #d32f2f;
+    background-color: #64e264;
 }
 
 #reset-button:active {
-    background-color: #1f1cb7;
+    background-color: #1c8bb7;
 }
 
 ul {
@@ -53,35 +69,40 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 80%;
+    font-weight: bold;
+
 }
 
 .word-content {
-    margin: 0 auto; 
+    margin: 0 auto;  
+    
 }
 
 
 li {
     flex-basis: auto;
     margin-bottom: 10px;
-    border: 2px solid #000000;
+    border: 2px solid #85ff33 ;
     border-radius: 15% / 40%;
     padding: 10px;
+    animation: borderChange 5s infinite;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes borderChange {
+    0% {
+      border-color: #85ff33;
+    }
+    25% {
+      border-color: #33ff85;
+    }
+    50% {
+      border-color: #3385ff;
+    }
+    75% {
+      border-color: #8533ff;
+    }
+    100% {
+      border-color: #85ff33;
+    }
+}
